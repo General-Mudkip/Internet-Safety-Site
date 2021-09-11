@@ -1,0 +1,32 @@
+.home-header {
+    font-family: lft-etica-mono,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.home-header-sub {
+    font-family: lft-etica-mono,sans-serif;
+    font-weight: 300;
+    font-size: medium;
+    font-style: italic;
+}
+
+.home-button-text {
+    font-family: lft-etica-mono,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.button-text {
+    font-family: lft-etica-mono,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.nav-title {
+    font-family: lft-etica-mono,sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}

@@ -15,7 +15,7 @@
 
     <title>Internet Safety</title>
 </head>
-<body>
+<body onload="typeWriter()">
 
     <div class="container">
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
@@ -26,7 +26,7 @@
 
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="#" class="bg-dark home-button-text nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="button-text nav-link">Test</a></li>
+                <li class="nav-item"><a href="#" class="button-text nav-link">The Test</a></li>
                 <li class="nav-item"><a href="#" class="button-text nav-link">FAQs</a></li>
                 <li class="nav-item"><a href="#" class="button-text nav-link">About</a></li>
             </ul>
@@ -34,17 +34,31 @@
     </div>
 
     <div class="px-4 pt-5 my-5 text-center border-bottom">
-        <h1 class="display-4 fw-bold home-header">INTERNET<br>Safety</h1>
+        <h1 id="home-text" class="fw-bold home-header"></h1>
         <div class="col-lg-6 mx-auto">
             <p class="lead mb-4 home-header-sub">Are you truly as safe as you think you are?</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                <button type="button" class="btn bg-dark btn-lg px-4 me-sm-3 home-button-text">Find Out</button>
+                <button onclick="typeWriter()" type="button" class="btn bg-dark btn-lg px-4 me-sm-3 home-button-text">Find Out</button>
             </div>
         </div>
             <div class="container px-5">
                 <img src="online_security_image.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Internet safety image" loading="lazy" width="700" height="500">
         </div>
     </div>
+
+    <script>
+        var i = 0;
+        var txt = 'INTERNET Safety.';
+        var speed = 80;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("home-text").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
 
 </body>
 </html>

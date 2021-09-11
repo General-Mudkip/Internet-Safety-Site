@@ -2,6 +2,7 @@
     font-family: lft-etica-mono,sans-serif;
     font-weight: 500;
     font-style: normal;
+    font-size: xxx-large;
 }
 
 .home-header-sub {
@@ -11,18 +12,35 @@
     font-style: italic;
 }
 
-.home-button-text {
+.home-button-text,
+.home-button-text:active,
+.home-button-text:visited,
+.home-button-text:focus {
     font-family: lft-etica-mono,sans-serif;
     font-weight: 400;
     font-style: normal;
     color: white;
+    transition: box-shadow 0.5s;
+}
+
+.home-button-text:hover {
+    box-shadow: 0 0 1em rgba(33,33,33,0.6);
+    color:white;
 }
 
 .button-text {
+    margin-left: 1em;
     font-family: lft-etica-mono,sans-serif;
     font-weight: 400;
     font-style: normal;
     color: black;
+    transition: text-shadow 0.5s, background-color 0.3s;
+}
+
+.button-text:hover {
+    text-shadow: 0 0 1em rgba(33,33,33,0.6);
+    background-color: rgba(33,33,33,0.2);
+    color:black;
 }
 
 .nav-title {

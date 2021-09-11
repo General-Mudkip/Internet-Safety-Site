@@ -18,7 +18,7 @@
 <body onload="typeWriter()">
 
     <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom mx-auto">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                 <img style="margin-right: 0.5em;" src="lock_icon.png" alt="Lock Icon" width="30">
                 <span class="fs-4 nav-title">Safety</span>
@@ -27,13 +27,12 @@
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="#" class="bg-dark home-button-text nav-link active" aria-current="page">Home</a></li>
                 <li class="nav-item"><a href="#" class="button-text nav-link">The Test</a></li>
-                <li class="nav-item"><a href="#" class="button-text nav-link">FAQs</a></li>
                 <li class="nav-item"><a href="#" class="button-text nav-link">About</a></li>
             </ul>
         </header>
     </div>
 
-    <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <div class="px-4 pt-5 my-5 text-center">
         <h1 id="home-text" class="fw-bold home-header"></h1>
         <div class="col-lg-6 mx-auto">
             <p class="lead mb-4 home-header-sub">Are you truly as safe as you think you are?</p>
@@ -46,10 +45,26 @@
         </div>
     </div>
 
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-muted home-header-sub">Internet Safety</p>
+
+            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <img style="margin-right: 0.5em;" src="lock_icon.png" alt="Lock Icon" width="30">
+            </a>
+
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#" class="button-text nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="button-text nav-link">The Test</a></li>
+                <li class="nav-item"><a href="#" class="button-text nav-link">About</a></li>
+            </ul>
+        </footer>
+    </div>
+
     <script>
-        var i = 0;
-        var txt = 'INTERNET Safety.';
-        var speed = 80;
+        let i = 0;
+        let txt = 'INTERNET Safety.';
+        let speed = 80;
 
         function typeWriter() {
             if (i < txt.length) {

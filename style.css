@@ -12,6 +12,13 @@
     font-style: italic;
 }
 
+.standard-text {
+    font-family: lft-etica-mono,sans-serif;
+    font-weight: 300;
+    font-size: medium;
+    font-style: normal;
+}
+
 .home-button-text,
 .home-button-text:active,
 .home-button-text:visited,
@@ -47,4 +54,32 @@
     font-family: lft-etica-mono,sans-serif;
     font-weight: 300;
     font-style: italic;
+}
+
+h2 {
+    font-family: lft-etica-mono,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+a,
+a:hover {
+    color:black;
+}
+
+.feature {
+    margin-top:0.5em;
+}
+
+.list-group {
+    overflow:hidden;
+    vertical-align: top;
+}
+
+.list-group-item {
+    transition: box-shadow 0.25s;
+}
+
+.list-group-item:hover {
+    box-shadow: 0 0 1em rgba(33,33,33,0.2);
 }

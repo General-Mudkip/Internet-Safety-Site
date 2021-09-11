@@ -38,7 +38,7 @@
 }
 
 .button-text:hover {
-    text-shadow: 0 0 1em rgba(33,33,33,0.6);
+    text-shadow: 0 0 1em rgba(33,33,33,0.1);
     background-color: rgba(33,33,33,0.2);
     color:black;
 }

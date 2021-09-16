@@ -82,4 +82,5 @@ a:hover {
 
 .list-group-item:hover {
     box-shadow: 0 0 1em rgba(33,33,33,0.2);
+    background-color: white;
 }
